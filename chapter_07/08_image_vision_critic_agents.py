@@ -1,3 +1,10 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import base64
 import os
@@ -28,7 +35,7 @@ def encode_image(image_path):
 
 @function_tool
 def describe_image(image_path: str, prompt: str) -> str:
-    """Describe the image using the GPT-5 model.
+    """Describe the image using an NRP vision model.
     Args:
         image_path (str): Path to the image file.
         prompt (str): Prompt to guide the description.
@@ -37,23 +44,24 @@ def describe_image(image_path: str, prompt: str) -> str:
     """
     client = OpenAI()
     base64_image = encode_image(image_path)
-
-    response = client.responses.create(
-        model="gpt-5-mini",
-        input=[
+    response = client.chat.completions.create(
+        model=nrp.VISION_MODEL,
+        messages=[
             {
                 "role": "user",
                 "content": [
-                    {"type": "input_text", "text": "what's in this image?"},
+                    {"type": "text", "text": prompt or "what's in this image?"},
                     {
-                        "type": "input_image",
-                        "image_url": f"data:image/jpeg;base64,{base64_image}",
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}"
+                        },
                     },
                 ],
-            }  # type: ignore
+            }
         ],
     )
-    return response.output_text
+    return response.choices[0].message.content or ""
 
 
 style_guidelines = """
@@ -83,7 +91,7 @@ async def main():
     agent = Agent(
         name="Image generator",
         instructions=style_guidelines,
-        model="gpt-5-mini",
+        model="gpt-oss",
         tools=[
             ImageGenerationTool(
                 tool_config={
@@ -110,7 +118,7 @@ based on the provided specific criteria and style guidelines.
 {style_guidelines}
 {rubric}
 """,
-        model="gpt-5-mini",  # Specify the model to use
+        model="gpt-oss",  # Specify the model to use
         tools=[describe_image],
         output_type=CritqueImage,
     )

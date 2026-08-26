@@ -1,3 +1,10 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import base64
 import os
@@ -203,7 +210,7 @@ async def main():
 **Image Prompt:**
 "Hyper-realistic 3D scene of an inspiring graduation pathway where a character transforms from 'Prompt Tinkerer' to 'Agent Architect.' Scene shows three milestone gates: Gate 1 (Build) with OpenAI SDK construction tools, Gate 2 (Connect) with MCP integration bridges, Gate 3 (Scale) with multi-agent collaboration platforms. Character walks confidently toward future cityscape filled with autonomous agent systems working harmoniously. Graduation cap transforms into architect's hard hat along the journey. Infographic elements include career progression maps, skill development timelines, and achievement unlock indicators. Inspiring sunrise lighting makes the journey feel like an exciting adventure toward professional mastery and meaningful impact."
 """,
-        model="o3",
+        model="gpt-oss",
         tools=[
             ImageGenerationTool(
                 tool_config={

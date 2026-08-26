@@ -1,3 +1,10 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 from agents import Agent, ModelSettings, Runner
 from dotenv import load_dotenv
 
@@ -17,7 +24,7 @@ You are a research planning assistant.
 agent = Agent(
     name="Research Planner", 
     instructions=instructions,
-    model="gpt-4.1",  # Specify the model to use
+    model="gpt-oss",  # NRP chat model; see https://nrp.ai/documentation/userdocs/ai/llm-managed/models
     model_settings=ModelSettings(
         temperature=0.0,  # Set the temperature for repeatability
         max_tokens=150,  # Set the maximum number of tokens in the response

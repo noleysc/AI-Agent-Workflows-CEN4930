@@ -1,7 +1,14 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 from agents import Agent, Runner, SQLiteSession, function_tool
 
 kb = load_vector_kb(  # your FAISS/Weaviate/Chroma wrapper
-    embedding_model="text-embedding-3-small",  # choose embeddings deliberately
+    embedding_model="qwen3-embedding",  # choose embeddings deliberately
     index="HNSW",  # ANN (HNSW/IVF)
     shards=["product", "policy", "engineering"],  # shard by domain
 )

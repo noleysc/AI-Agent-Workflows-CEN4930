@@ -8,6 +8,10 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
         },
         {
             "name": "Python FastAPI",
@@ -23,6 +27,10 @@
                 "--reload"
             ],
             "jinja": true,
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
         }
     ]
 }

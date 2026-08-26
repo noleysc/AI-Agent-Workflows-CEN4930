@@ -1,3 +1,10 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 from openai import OpenAI
 import numpy as np
 from sklearn.decomposition import PCA
@@ -11,9 +18,9 @@ api_key = os.getenv('OPENAI_API_KEY')
 # Ensure the API key is available
 if not api_key:
     raise ValueError("No API key found. Please check your .env file.")
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=api_key, base_url=nrp.BASE_URL)
 
-def get_embedding(text, model="text-embedding-ada-002"):
+def get_embedding(text, model=nrp.EMBEDDING_MODEL):
     text = text.replace("\n", " ")
     return client.embeddings.create(input = [text], model=model).data[0].embedding
 

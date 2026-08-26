@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-agent-workflows-nrp"
+version = "0.1.0"
+description = "NRP OpenAI-compatible bootstrap for AI Agent Workflows"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv"]
+
+[tool.setuptools]
+py-modules = ["nrp"]

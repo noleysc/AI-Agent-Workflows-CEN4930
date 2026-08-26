@@ -1,3 +1,10 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import base64
 import os
@@ -185,7 +192,7 @@ A horizontal spectrum/slider visualization as a 3D diorama landscape. LEFT SIDE 
 
 Each prompt includes the style header, educational labels visible in 3-5 seconds, and 2-3 playful supporting elements!
 """,
-        model="gpt-5.2",
+        model="gpt-oss",
         tools=[
             ImageGenerationTool(
                 tool_config={

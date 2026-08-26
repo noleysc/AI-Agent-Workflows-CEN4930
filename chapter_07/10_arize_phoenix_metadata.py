@@ -1,3 +1,11 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is not None:
+    _sys.path.insert(0, str(_nrp_root))
+    import nrp  # NRP OpenAI-compatible API (loads .env)
+
 # docker run -it --rm -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
 
 import os
@@ -22,7 +30,7 @@ tracer_provider = register(
     auto_instrument=True,  # Auto-instrument your app based on installed dependencies
 )
 
-model = "gpt-5-mini"
+model = "gpt-oss"
 agent = Agent(name="Assistant", instructions="Always answer in a Haiku", model=model)
 
 
