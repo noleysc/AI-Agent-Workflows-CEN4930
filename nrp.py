@@ -53,6 +53,7 @@ if _requested_model.lower() not in NRP_CHAT_MODELS:
 os.environ["OPENAI_DEFAULT_MODEL"] = _requested_model
 
 # Must be set before the Agents SDK tracing provider first reads the env var.
+# NRP tokens cannot write traces to api.openai.com (that 401 is this exporter).
 os.environ["OPENAI_AGENTS_DISABLE_TRACING"] = "1"
 
 CHAT_MODEL = os.environ["OPENAI_DEFAULT_MODEL"]
@@ -77,12 +78,20 @@ def configure() -> None:
             Agent,
             set_default_openai_api,
             set_default_openai_client,
+            set_trace_processors,
             set_tracing_disabled,
         )
         from agents.models.multi_provider import MultiProvider
         from agents.run_config import RunConfig
+        from agents.tracing.processors import BackendSpanExporter
     except ImportError:
         return
+
+    # Disable OpenAI platform tracing before any run creates a trace.
+    set_tracing_disabled(True)
+    set_trace_processors([])
+    BackendSpanExporter.export = lambda self, items: None  # type: ignore[method-assign]
+    BackendSpanExporter._export_with_deadline = lambda self, items, deadline=None: None  # type: ignore[method-assign]
 
     if api_key:
         set_default_openai_client(
@@ -92,7 +101,6 @@ def configure() -> None:
     # NRP implements Chat Completions. The SDK default is /v1/responses, which
     # Envoy AI Gateway rejects with "No matching route found".
     set_default_openai_api("chat_completions")
-    set_tracing_disabled(True)
 
     if _configured:
         return
