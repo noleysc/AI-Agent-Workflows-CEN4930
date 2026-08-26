@@ -104,3 +104,5 @@ This will run the agent and display the output in the terminal.
 - Ensure you are using the correct Python interpreter that matches your environment.
 - The `.env` file should not be shared or committed to version control to keep your API key secure.
 - `nrp.py` loads `.env`, sets `OPENAI_BASE_URL`, switches the Agents SDK to Chat Completions, and disables OpenAI tracing. Example scripts import it at startup.
+
+If you see `No matching route found` from the NRP gateway, the request used OpenAI's Responses API (`/v1/responses`) or a model NRP does not host (for example `gpt-4o` or `gpt-5.6-luna`). Import `nrp` first and use `gpt-oss` (or another id from `/v1/models`). A `[non-fatal] Tracing client error 401` means traces were sent to `api.openai.com`; `nrp.py` disables that.
