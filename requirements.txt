@@ -13,8 +13,9 @@ openai-agents[viz]  # Visualization tools for OpenAI agents
 
 plotly  # For creating interactive visualizations
 numpy  # Fundamental package for scientific computing with Python
-chromadb  # Vector database for storing and querying embeddings
+chromadb==1.5.9  # Vector database; must match chroma-mcp launch in chapter_06 hybrid agents
 tiktoken
+scikit-learn  # TF-IDF / PCA helpers used by chapter_06 embedding examples
 
 # A2A
 google-adk[a2a]
