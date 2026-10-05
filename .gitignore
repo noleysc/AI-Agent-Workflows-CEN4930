@@ -175,3 +175,6 @@ cython_debug/
 
 # generated images
 gen_images/
+
+# Chapter 6 vector store, built by 02_RAG_agent_vector.py (Chroma rewrites it on every open)
+chapter_06/chroma_script_store/
