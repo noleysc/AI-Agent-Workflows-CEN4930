@@ -9,9 +9,12 @@ if _nrp_root is None:
 _sys.path.insert(0, str(_nrp_root))
 import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
+from pathlib import Path
 
 from agents import Agent, Runner
 from agents.mcp import MCPServerStdio
+
+CHROMA_PATH = Path(__file__).resolve().parent / "chroma_script_store"
 
 
 async def main():
@@ -31,7 +34,7 @@ async def main():
                 "--with", "chromadb==1.5.9",
                 "chroma-mcp@0.2.6",
                 "--client-type", "persistent",
-                "--data-dir", "chapter_06/chroma_script_store",
+                "--data-dir", str(CHROMA_PATH),
             ],
         },
         client_session_timeout_seconds=300,

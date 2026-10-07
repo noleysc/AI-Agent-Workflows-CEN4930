@@ -1,5 +1,13 @@
 # Chapter 6 examples
 
+You can run these from the repo root or from this directory:
+
+```bash
+python chapter_06/02_RAG_agent_vector.py
+# or
+cd chapter_06 && python 02_RAG_agent_vector.py
+```
+
 Run `02_RAG_agent_vector.py` (or `02_RAG_agent_hybrid.py`) before the hybrid memory agents. It builds the Chroma vector store in `chapter_06/chroma_script_store` from `sample_documents/back_to_the_future.txt`, and `04_hybrid_memory_agent.py` and `04x_hybrid_memory_agent.py` query that store through the `chroma-mcp` server. The first run also downloads Chroma's default embedding model, about 80 MB.
 
 The store is not part of the repository, because Chroma rewrites its files every time it opens them; it is built on your machine instead.

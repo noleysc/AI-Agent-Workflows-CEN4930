@@ -19,12 +19,14 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
+CHAPTER_DIR = Path(__file__).resolve().parent
+SCRIPT_PATH = CHAPTER_DIR / "sample_documents" / "back_to_the_future.txt"
+CHROMA_PATH = CHAPTER_DIR / "chroma_script_store"
+
 # ------------------------------------------------------------------
 # 1. Load + chunk the script
 # ------------------------------------------------------------------
-script_text = Path("chapter_06/sample_documents/back_to_the_future.txt").read_text(
-    encoding="utf-8"
-)
+script_text = SCRIPT_PATH.read_text(encoding="utf-8")
 
 
 def simple_chunk(text, max_tokens=200):
@@ -47,7 +49,7 @@ docs = simple_chunk(script_text, max_tokens=200)
 # 2. Create (or connect to) a Chroma collection with OpenAI embeddings
 # ------------------------------------------------------------------
 client = chromadb.PersistentClient(
-    path="./chapter_06/chroma_script_store"  # on-disk so we reuse later
+    path=str(CHROMA_PATH)  # on-disk so we reuse later
 )
 collection_name = "bttf_script"
 
