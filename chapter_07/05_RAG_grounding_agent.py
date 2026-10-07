@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 
 from agents import Agent, Runner, function_tool
@@ -53,7 +63,7 @@ Break down the user's query into smaller parts if needed
 to fetch relevant context for the user's query.
 """,
     tools=[search_knowledge_by_keyword],
-    model="gpt-4o",  # Specify the model to use
+    model="gpt-oss",  # Specify the model to use
 )
 
 
@@ -83,7 +93,7 @@ Your task is to evaluate the correctness of answers
 based on the provided question, context used,
 and output answer.
 """,
-    model="gpt-4o",  # Specify the model to use
+    model="gpt-oss",  # Specify the model to use
     output_type=GroundedAnswer,
     tools=[get_last_context],
 )

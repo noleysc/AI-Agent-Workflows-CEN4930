@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import os
 from pydantic import BaseModel, Field
@@ -75,7 +85,7 @@ and transformation instructions, read the file,
 apply the transformation, and write the result.
 Report success or failure for each task.
 """,
-    model="gpt-4o",
+    model="gpt-oss",
     output_type=TaskResult,
 )
 

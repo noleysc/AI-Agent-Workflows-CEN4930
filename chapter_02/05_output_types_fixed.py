@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 from agents import Agent, Runner
 from dotenv import load_dotenv
 from pydantic import BaseModel, ConfigDict

@@ -1,3 +1,14 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
+
 # app.py
 import base64
 
@@ -12,8 +23,10 @@ from pydantic import BaseModel, Field
 # Load environment variables from .env file (e.g. OPENAI_API_KEY)
 load_dotenv()
 
+import os
+
 # ----- Fixed configuration -----
-CONTROLLER_MODEL = "gpt-5-mini"  # the LLM running the agent
+CONTROLLER_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-oss")  # image tool still needs OpenAI
 TOOL_CONFIG = {
     "type": "image_generation",
     "quality": "high",

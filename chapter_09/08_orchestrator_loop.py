@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import os
 from pydantic import BaseModel, Field
@@ -139,7 +149,7 @@ research sub-task and execute it thoroughly using your search
 tools. Return detailed findings with sources.
 Do not deviate from the assigned sub-task.
 """,
-    model="gpt-4o",
+    model="gpt-oss",
     output_type=ResearchIteration,
 )
 
@@ -150,7 +160,7 @@ You are a data analysis worker. You receive findings and data
 to analyze. Identify patterns, contradictions, and gaps.
 Return a structured analysis with confidence assessments.
 """,
-    model="gpt-4o",
+    model="gpt-oss",
     output_type=ResearchIteration,
 )
 
@@ -176,7 +186,7 @@ Each iteration, review the current state and plan, then decide:
 
 Always provide reasoning for your decision.
 """,
-    model="gpt-4o",
+    model="gpt-oss",
     output_type=OrchestratorDecision,
 )
 

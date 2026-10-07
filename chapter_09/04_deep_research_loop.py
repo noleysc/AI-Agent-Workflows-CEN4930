@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import os
 from pydantic import BaseModel, Field
@@ -115,7 +125,7 @@ follow_up_questions drive tactical execution.
 When you believe you have sufficient information to answer
 the research goal comprehensively, set goal_satisfied to true.
 """,
-    model="gpt-4o",
+    model="gpt-oss",
     output_type=ResearchIteration,
 )
 

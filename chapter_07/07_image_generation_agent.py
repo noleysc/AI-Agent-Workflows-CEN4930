@@ -1,3 +1,13 @@
+import sys as _sys
+from pathlib import Path as _Path
+
+_nrp_root = next((p for p in _Path(__file__).resolve().parents if (p / "nrp.py").exists()), None)
+if _nrp_root is None:
+    raise ImportError(
+        "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
+    )
+_sys.path.insert(0, str(_nrp_root))
+import nrp  # NRP OpenAI-compatible API (loads .env)
 import asyncio
 import base64
 import os
@@ -32,7 +42,7 @@ async def main():
 - **Icons**: Use universally recognizable symbols (lightbulbs for ideas, gears for processing, hearts for alignment, etc.)
 - **Mood**: Optimistic, educational, and slightly futuristic without being cold or intimidating
 """,
-        model="gpt-5-mini",
+        model="gpt-oss",
         tools=[
             ImageGenerationTool(
                 tool_config={
