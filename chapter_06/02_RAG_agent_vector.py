@@ -7,17 +7,30 @@ if _nrp_root is None:
         "nrp.py not found. Run this script from the AI-Agent-Workflows checkout."
     )
 _sys.path.insert(0, str(_nrp_root))
+import os
+
+os.environ["OPENAI_AGENTS_DISABLE_TRACING"] = "1"
+
 import nrp  # NRP OpenAI-compatible API (loads .env)
 import uuid
 from pathlib import Path
 
 import chromadb
 import tiktoken
-from agents import Agent, Runner, function_tool  # OpenAI Agents SDK
+from agents import (  # OpenAI Agents SDK
+    Agent,
+    RunConfig,
+    Runner,
+    function_tool,
+    set_trace_processors,
+    set_tracing_disabled,
+)
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
+set_tracing_disabled(True)
+set_trace_processors([])
 
 CHAPTER_DIR = Path(__file__).resolve().parent
 SCRIPT_PATH = CHAPTER_DIR / "sample_documents" / "back_to_the_future.txt"
@@ -81,21 +94,28 @@ def search_script(query: str, top_k: int = 3) -> str:
 # ------------------------------------------------------------------
 agent = Agent(
     name="Script Agent",
+    model=nrp.CHAT_MODEL,
     instructions=(
         "You answer questions about the movie *Back to the Future*.\n"
-        "When needed, call the `search_script` tool to fetch passages, "
-        "then cite or paraphrase them in your answer."
+        "Call `search_script` at most once per question, then answer from the "
+        "returned passages. Do not keep calling tools after you have enough text. "
+        "If search returns nothing useful, say you could not find it."
     ),
     tools=[search_script],
 )
 
+run_config = RunConfig(tracing_disabled=True)
+
 # ------------------------------------------------------------------
 # 5. Ask a question
 # ------------------------------------------------------------------
+print(f"Using model={nrp.CHAT_MODEL} base_url={nrp.BASE_URL}")
+print(f"Chroma collection '{collection_name}' has {collection.count()} chunks")
+
 query = "Where does Doc tell Marty to meet him, and at what time?"
-result = Runner.run_sync(agent, query)
+result = Runner.run_sync(agent, query, max_turns=5, run_config=run_config)
 print("\n--- ANSWER ---\n", result.final_output)
 
 query = "What happens at 1:15AM"
-result = Runner.run_sync(agent, query)
+result = Runner.run_sync(agent, query, max_turns=5, run_config=run_config)
 print("\n--- ANSWER ---\n", result.final_output)
