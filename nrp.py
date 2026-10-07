@@ -41,13 +41,24 @@ _REPO_ROOT = Path(__file__).resolve().parent
 load_dotenv(_REPO_ROOT / ".env")
 load_dotenv()
 
+
+def _clean_secret(value: str | None) -> str:
+    """Normalize pasted tokens: strip whitespace/BOM and surrounding quotes."""
+    if not value:
+        return ""
+    cleaned = value.strip().strip("\ufeff")
+    if len(cleaned) >= 2 and cleaned[0] == cleaned[-1] and cleaned[0] in {"'", '"'}:
+        cleaned = cleaned[1:-1].strip()
+    return cleaned.replace("\r", "").replace("\n", "")
+
+
 os.environ["OPENAI_BASE_URL"] = (
-    os.getenv("OPENAI_BASE_URL") or NRP_BASE_URL
+    _clean_secret(os.getenv("OPENAI_BASE_URL")) or NRP_BASE_URL
 ).rstrip("/")
 if os.environ["OPENAI_BASE_URL"].endswith("/chat/completions"):
     os.environ["OPENAI_BASE_URL"] = os.environ["OPENAI_BASE_URL"][: -len("/chat/completions")]
 
-_requested_model = (os.getenv("OPENAI_DEFAULT_MODEL") or DEFAULT_CHAT_MODEL).strip()
+_requested_model = _clean_secret(os.getenv("OPENAI_DEFAULT_MODEL")) or DEFAULT_CHAT_MODEL
 if _requested_model.lower() not in NRP_CHAT_MODELS:
     _requested_model = DEFAULT_CHAT_MODEL
 os.environ["OPENAI_DEFAULT_MODEL"] = _requested_model
@@ -55,6 +66,10 @@ os.environ["OPENAI_DEFAULT_MODEL"] = _requested_model
 # Must be set before the Agents SDK tracing provider first reads the env var.
 # NRP tokens cannot write traces to api.openai.com (that 401 is this exporter).
 os.environ["OPENAI_AGENTS_DISABLE_TRACING"] = "1"
+
+_api_key = _clean_secret(os.getenv("OPENAI_API_KEY"))
+if _api_key:
+    os.environ["OPENAI_API_KEY"] = _api_key
 
 CHAT_MODEL = os.environ["OPENAI_DEFAULT_MODEL"]
 EMBEDDING_MODEL = os.getenv("NRP_EMBEDDING_MODEL", DEFAULT_EMBEDDING_MODEL)
@@ -68,7 +83,7 @@ def configure() -> None:
     """Apply NRP defaults to the OpenAI Agents SDK (idempotent)."""
     global _configured
 
-    api_key = (os.getenv("OPENAI_API_KEY") or "").strip()
+    api_key = _clean_secret(os.getenv("OPENAI_API_KEY"))
     if api_key:
         os.environ["OPENAI_API_KEY"] = api_key
 

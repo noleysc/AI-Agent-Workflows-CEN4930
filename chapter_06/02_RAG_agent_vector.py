@@ -111,9 +111,24 @@ run_config = RunConfig(tracing_disabled=True)
 # ------------------------------------------------------------------
 print(f"Using model={nrp.CHAT_MODEL} base_url={nrp.BASE_URL}")
 print(f"Chroma collection '{collection_name}' has {collection.count()} chunks")
+_key = os.getenv("OPENAI_API_KEY") or ""
+print(f"OPENAI_API_KEY set={bool(_key)} length={len(_key)}")
+if not _key:
+    raise SystemExit(
+        "OPENAI_API_KEY is empty. Put your NRP token from https://nrp.ai/llmtoken in .env"
+    )
 
 query = "Where does Doc tell Marty to meet him, and at what time?"
-result = Runner.run_sync(agent, query, max_turns=5, run_config=run_config)
+try:
+    result = Runner.run_sync(agent, query, max_turns=5, run_config=run_config)
+except Exception as exc:
+    if "403" in str(exc) or type(exc).__name__ == "PermissionDeniedError":
+        raise SystemExit(
+            "NRP returned 403 (auth/permission). Run: python check_nrp_auth.py\n"
+            "Then mint a fresh token at https://nrp.ai/llmtoken and update .env "
+            "OPENAI_API_KEY (no quotes)."
+        ) from exc
+    raise
 print("\n--- ANSWER ---\n", result.final_output)
 
 query = "What happens at 1:15AM"
