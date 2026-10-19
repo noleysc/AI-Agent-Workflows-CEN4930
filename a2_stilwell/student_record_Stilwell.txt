@@ -1,0 +1,29 @@
+STUDENT_NAME: Maya Ellison
+STUDENT_ID: 80045123
+CURRENT_MAJOR: Psychology, B.A.
+INTENDED_MAJOR: Computer Science, B.S.
+CUMULATIVE_GPA: 3.41
+TERM_GPA: 3.67
+EARNED_CREDITS: 48
+COLLEGE: College of Arts and Sciences
+CATALOG_YEAR: 2024-2025
+ACADEMIC_STANDING: good standing
+HOLDS: none
+CHECKLIST_GPA_MINIMUM: 3.00
+CHECKLIST_PREREQS: COP 1500|C, MAC 1147|C, ENC 1101|C
+COMPLETED: COP 1500|A, MAC 1147|B+, ENC 1101|A-, ENC 1102|B, STA 2023|A-, PSY 2012|A, PSY 3213|B+, BSC 1010|B, SPC 1017|A, PHI 2010|B
+IN_PROGRESS: MAC 2311, PSY 3017
+ADVISOR: Dr. Helen Park
+CONCENTRATION_INTEREST: software engineering
+DEGREE_MAP_NOTE: MAC 2311 is in progress. The change-of-major checklist accepts MAC 1147, but the Computer Science degree map still expects Calculus I before COP 2006.
+FILE_NOTE: Checklist copied from the March 2, 2026 advising conference. Official process, deadlines, and forms live in the policy document, not in this file.
+
+## Narrative
+
+Maya Ellison is a second-year student in the College of Arts and Sciences at Gulf Cypress University. She entered under the 2024-2025 catalog as a Psychology major and has stayed in good academic standing every term since matriculation. Her cumulative GPA is 3.41. Her current-term GPA is 3.67. She has 48 earned credits. She is not on probation, she has no bursar hold, and her immunization record is complete. Maya asked her faculty advisor, Dr. Helen Park, for a same-week appointment because she wants to leave Psychology and enter the Bachelor of Science in Computer Science, with a software engineering concentration.
+
+The courses already on her transcript that matter for a change of major are COP 1500 Introduction to Computer Science, completed with an A, MAC 1147 Precalculus Algebra and Trigonometry, completed with a B+, and ENC 1101 Composition I, completed with an A-. She also finished ENC 1102, STA 2023, PSY 2012, PSY 3213, BSC 1010, SPC 1017, and PHI 2010. This term she is enrolled in MAC 2311 Calculus I and PSY 3017 Research Methods. Calculus is not finished, so it cannot be treated as a completed prerequisite. The checklist stored on this advising file accepts MAC 1147 in its place for the major-change review only.
+
+Maya told Dr. Park that the programming projects in COP 1500 were the first assignments she stayed on campus to finish, and that her ENC 1102 paper was a literature review on human memory. She hopes her psychology credits can remain general electives where the Computer Science catalog allows it. She does not want to miss the spring registration window. She works eight hours a week at the campus library and can visit the registrar counter on a Tuesday or Thursday afternoon. Her student ID is 80045123.
+
+The checklist copied onto this file on March 2, 2026 states that the Computer Science department expects a 3.00 cumulative GPA, a grade of C or better in COP 1500 or COP 2000, a grade of C or better in MAC 1147 or MAC 2311, and a grade of C or better in ENC 1101, together with good academic standing and no active hold. The degree map still lists MAC 2311 as the math course she needs before COP 2006, even though MAC 1147 clears the change-of-major gate. This file is the academic record used by the eligibility review. It is not the official university policy, and it does not list form numbers or the registrar deadline.

@@ -1,0 +1,26 @@
+SURFER: Nolan
+SITE: Bonita Beach access 10, south of the pier
+CLASS_NAME: Holmes Hall
+CLASS_TIME: 09:30
+PARK_BACK_BY: 09:10
+DRIVE_MINUTES: 35
+BOARD: 8 foot funboard
+SHOULDER: sore — no overhead takeoffs
+LAST_SESSION: Thursday, knee-high, ended after 40 minutes because a rip sat just south of the pier
+SLEEP_HOURS: 6
+WETSUIT: spring suit already in the hatch
+BUDDY: none
+HARD_NO: lightning, a double red flag, or fewer than 45 minutes of actual water time
+EARLIEST_ENTRY: 06:25
+PLANNED_EXIT: 07:35
+CAR_NOTE: The campus decal lot is the return parking. Street parking near Holmes Hall is not part of this plan.
+
+## Narrative
+
+This log is the personal record Nolan checks before a dawn patrol at Bonita Beach, ahead of a 9:30 class in Holmes Hall at Florida Gulf Coast University. It is not a forecast and it is not a lifeguard report. It is the constraint sheet for one student who keeps an 8 foot funboard in the hatch and a spring suit that is already dry enough to pull on in the parking lot.
+
+The class constraint is the one that usually loses the session. He has to be parked back on campus by 9:10 so he can lock the car, rinse his feet at the gym fountain, and walk into Holmes Hall without sitting down wet. The drive from access 10 is about 35 minutes when the beach road is empty, which it is before 7:00 and is not after the school rush. Working backward from 9:10, the latest clean exit from the water is 7:35. That includes ten minutes to towel off and deal with the meter. If he is still paddling at 7:40 he is trading the class for the wave, and this log does not allow that trade.
+
+His shoulder has been sore since Tuesday's long paddle. Overhead takeoffs are off the plan. The board is the funboard, not the shortboard, because the funboard lets him into knee-high waves without a late drop. Thursday's session was knee-high with a west bump, and he got out after 40 minutes because a rip was parked just south of the pier. He is paddling alone. Six hours of sleep is enough for a short session and not enough for a heroic one. The hard stops he wrote down for himself are lightning, a double red flag, or a water window shorter than 45 minutes. A session that is only a photo on the beach does not count.
+
+The earliest he can realistically be in the water, after parking opens and he walks past the tower, is 6:25. From 6:25 to 7:35 is about 70 minutes, which clears the 45 minute rule with room to paddle in early if the rip from Thursday is still sitting in the same place. Waiting around for company is not in the plan, because there is no buddy on this log.

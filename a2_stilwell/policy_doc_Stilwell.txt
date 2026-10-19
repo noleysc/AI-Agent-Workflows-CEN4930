@@ -1,0 +1,37 @@
+UNIVERSITY: Gulf Cypress University
+DOCUMENT: Undergraduate Change of Major Policy
+OFFICE: Office of the Registrar and College Advising
+EFFECTIVE: Fall 2025 catalog, still in force for Spring 2026
+APPLIES_TO: Computer Science, B.S., and other department-controlled majors
+DEPARTMENT_GPA_MINIMUM: 3.00
+UNIVERSITY_GPA_FLOOR: 2.00
+DEADLINE: Friday of the third week of the term, 5:00 p.m. Eastern
+FORMS: Change of Major Form CMS-4; Degree Audit Request DAR-1; Advisor Conference Note ACN-2
+PREREQUISITES: COP 1500 or COP 2000 with C or better; MAC 1147 or MAC 2311 with C or better; ENC 1101 with C or better
+BLOCKING_HOLDS: academic probation; unpaid bursar hold; missing immunization record
+CATALOG_RULE: The student follows the Computer Science catalog in effect on the day the registrar approves CMS-4.
+CONCENTRATION_RULE: A software engineering concentration is declared after the major change posts, not on CMS-4.
+
+## Purpose
+
+Gulf Cypress University lets an undergraduate change major only when the receiving department and the registrar both have a complete file. A conversation with a faculty advisor is not, by itself, a change of major. The student remains in the current major, keeps that major's registration holds, and is billed under the current program until the registrar posts the approved Change of Major Form CMS-4. This policy is the source the advising office must cite for process, deadlines, and forms. A note in a student record may quote the GPA rule, but the quote does not replace this document.
+
+## Process
+
+The student first meets the faculty advisor of the current college and asks for an Advisor Conference Note ACN-2. The note must name the intended major, the concentration of interest if any, and the courses the advisor believes already satisfy the receiving department. The student then orders a Degree Audit Request DAR-1 so the audit shows both the current major and the intended major. Only after ACN-2 and DAR-1 exist does the student submit Change of Major Form CMS-4 to the receiving department. For Computer Science, the department reviewer checks the cumulative GPA, the prerequisite courses, academic standing, and blocking holds. The department chair or the chair's delegate signs CMS-4. The student walks the signed form to the registrar window, or uploads it through the registrar portal before the deadline. The registrar posts the new major within three business days and emails the student the new catalog year. The student may then meet a Computer Science advisor to declare the software engineering concentration. That declaration is a separate form inside the department and is not part of CMS-4.
+
+## Deadlines
+
+CMS-4 must reach the registrar by Friday of the third week of the term, at 5:00 p.m. Eastern Time. A form that arrives at 5:01 p.m. is stamped late and is reviewed only for the following term. Department signatures collected after the registrar deadline do not relate back to an earlier conversation. The Degree Audit Request DAR-1 must be at least one business day old when CMS-4 is submitted, because the reviewer has to see the audit. Students who are studying away from campus may upload the packet, but the upload clock is the registrar's clock, not the student's local time. Week three of the current term is the only window this policy recognizes. There is no late grace period for a student who already registered for psychology courses.
+
+## Forms
+
+Three forms are required, and nicknames do not count. CMS-4 is the Change of Major Form. It asks for the student ID, the current major, the intended major, the catalog year the student is leaving, and the department signature. DAR-1 is the Degree Audit Request. It is how the student forces the audit office to map completed courses onto the Computer Science degree. ACN-2 is the Advisor Conference Note. It is the faculty record that an advising conversation happened, and it must be dated before CMS-4. Missing any one of the three forms stops the review. A screenshot of a registration cart is not a substitute for DAR-1. An email to Dr. Park is not a substitute for ACN-2.
+
+## GPA and prerequisites
+
+The university will not move a student who is below a 2.00 cumulative GPA or who is on academic probation. That is the university floor. The Department of Computer Science sets a higher bar for this major. The department minimum is a 3.00 cumulative GPA, computed with the grades already posted, not with courses that are still in progress. The prerequisite set is COP 1500 or COP 2000 with a C or better, MAC 1147 or MAC 2311 with a C or better, and ENC 1101 with a C or better. A course that is in progress does not satisfy a prerequisite. A course with a C- or below does not satisfy it. Transfer courses count only when the registrar has already posted them with a Gulf Cypress equivalent. The department may still require MAC 2311 later on the degree map even when MAC 1147 was enough to open the major.
+
+## After the decision
+
+If CMS-4 is approved, the student drops any psychology courses that are not needed as electives before the add/drop day that follows the posting. If CMS-4 is denied, the student stays in Psychology and may appeal once, in writing, to the college dean within five business days. An appeal does not extend the week-three deadline for the original term. The dean can only remand the file to the department. The dean cannot invent a new deadline.

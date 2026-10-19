@@ -1,0 +1,25 @@
+SHEET: Bonita Beach dawn reference, maintained by Nolan
+SITE: Bonita Beach, Lee County, access 10 south of the pier
+CHECKED_AT: 05:10 the morning of the session
+FLAG: yellow
+LIGHTNING: none noted on the 5:10 check
+RIP: a standing rip on the south side of the pier; enter at least 200 yards south of that rip
+LIFEGUARD_ON_DUTY: 08:00
+PARKING_OPENS: 06:00
+PARKING_RATE: 2.50 dollars per hour, cards accepted at the meter
+WIND: light east offshore at dawn, turning onshore by 09:00
+UNGUARDED_RULE: water time before 08:00 is outside tower hours
+SOLO_RULE: no solo overhead takeoffs on a yellow flag
+DOUBLE_RED: closed, do not enter
+HAZARD_LEVEL: moderate
+GO_NO_GO_FROM_SHEET: caution
+
+## Narrative
+
+This sheet is a personal hazard note for Bonita Beach access 10, written so a pre-class paddle has one page of rules instead of a guess in the parking lot. It is a fictional course file built around a real beach Nolan uses. It is not a National Weather Service warning, and it should not be treated as one. The note was filled in at 5:10, before he left the apartment.
+
+The flag on the tower sign, as he recorded it, is yellow. Yellow on this sheet means medium hazard: enter with a plan, stay on the funboard, and do not treat the session like a flat-water practice. It is not a closure. A double red flag would close the water entirely, and this sheet would then say the session is over before the car starts. Lightning is recorded as none on the 5:10 check. If he hears thunder in the lot, the sheet's rule is to stay out and reset the clock for 30 minutes after the last thunder, which on a class morning means the session is cancelled rather than delayed.
+
+The rip he has been watching sits on the south side of the pier. Thursday it pulled him off the peak he wanted. The entry he allows himself is at least 200 yards south of that rip, closer to access 10 than to the pier shadow. He does not paddle up the beach toward the structure to find a better peak. Lifeguards do not staff the tower until 8:00. Any dawn patrol before that is unguarded. The solo rule on a yellow flag is specific: no overhead takeoffs while he is alone and the tower is empty. Knee-high waves on the funboard are the only waves this sheet permits before 8:00.
+
+Parking at the access lot opens at 6:00. The meter takes cards and the rate on the sticker is $2.50 an hour. Wind at dawn was a light east offshore, which is the clean window, and the sheet expects it to turn onshore by 9:00, after he should already be on the road. The hazard level for this combination, yellow flag plus an unguarded entry plus a known rip, is moderate. The sheet's own call is caution, not closure, and not an all-clear.
