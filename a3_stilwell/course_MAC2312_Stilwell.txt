@@ -1,0 +1,18 @@
+COURSE_NUMBER: MAC 2312
+TITLE: Calculus II
+CREDITS: 4
+PREREQUISITES: MAC 2311 with a grade of C or better
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Students must meet the mathematics placement rules of the College of Arts and Sciences. Engineering and computing majors have priority in high-demand sections.
+
+## Description
+MAC 2312 Calculus II continues the calculus sequence with techniques of integration, applications of the integral, sequences and series, parametric equations, and polar coordinates. Students solve applied problems in physics and engineering contexts and use a CAS or graphing tool where the instructor permits. The course is calculus-based and assumes fluency with limits, derivatives, and basic integrals from Calculus I. Weekly problem sets and midterm exams assess both procedural skill and conceptual understanding.
+
+## Prerequisites
+Required: MAC 2311 Calculus I with a grade of C or better. MAC 1147 Precalculus Algebra and Trigonometry does not satisfy this prerequisite. Dual-enrollment or AP Calculus AB credit counts only after the registrar posts MAC 2311 equivalence.
+
+## Credits
+MAC 2312 awards 4 credit hours. It is a required mathematics course for Computer Science and Software Engineering majors on the current catalog and is listed as a prerequisite for CEN 4930 AI Agent Studio.
+
+## Enrollment Restrictions
+Students who earned below a C in MAC 2311 must retake Calculus I before enrolling. Waitlisted students are admitted by the mathematics department according to major priority. The course is offered every term, including Summer.

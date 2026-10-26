@@ -1,0 +1,18 @@
+COURSE_NUMBER: CEN 3031
+TITLE: Software Engineering Fundamentals
+CREDITS: 3
+PREREQUISITES: COP 2006 with a grade of C or better
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Open to Computer Science and Software Engineering majors. Non-majors need department approval.
+
+## Description
+CEN 3031 Software Engineering Fundamentals introduces the software development lifecycle from requirements through maintenance. Students practice requirements writing, UML modeling, version control workflows, unit testing, and team code reviews. The course uses a semester project to connect design documents to a working prototype. Emphasis is placed on communication, estimation, and the difference between a demo and a maintainable release.
+
+## Prerequisites
+Required: COP 2006 Programming I with a grade of C or better. Students who completed only COP 1500 Introduction to Computer Science do not meet this prerequisite. AP Computer Science credit counts only when the registrar has posted COP 2006 equivalence.
+
+## Credits
+CEN 3031 awards 3 credit hours. It is a required course for Software Engineering majors and an approved elective for Computer Science majors on the 2024-2025 and later catalogs.
+
+## Enrollment Restrictions
+Priority registration is given to Software Engineering majors. The course is offered every Fall and Spring. Summer sections are not guaranteed.

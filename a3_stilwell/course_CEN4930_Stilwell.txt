@@ -1,0 +1,18 @@
+COURSE_NUMBER: CEN 4930
+TITLE: AI Agent Studio
+CREDITS: 3
+PREREQUISITES: CEN 3031, COP 3530, and MAC 2312 with a grade of C or better in each
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Junior or senior standing in Software Engineering or Computer Science. Instructor permission required for students outside those majors.
+
+## Description
+CEN 4930 AI Agent Studio is a project studio on building and evaluating AI agents. Students design tool-using agents, multi-agent workflows, retrieval-augmented systems, and guarded reasoning loops using current agent frameworks. The course emphasizes runnable systems, console-visible reasoning, citation of retrieved evidence, and refusal when a question cannot be grounded. Weekly labs build toward a final agent that retrieves from a local knowledge base and answers advising-style questions without inventing policy.
+
+## Prerequisites
+Required: CEN 3031 Software Engineering Fundamentals, COP 3530 Data Structures and Algorithms, and MAC 2312 Calculus II. Each prerequisite must be completed with a C or better before the first day of CEN 4930. Concurrent enrollment in any of those three courses does not satisfy the prerequisite rule. Transfer equivalents must already be posted on the Gulf Cypress University transcript.
+
+## Credits
+CEN 4930 awards 3 credit hours of upper-division Software Engineering elective credit. It does not satisfy the University Colloquium requirement.
+
+## Enrollment Restrictions
+Enrollment is limited to juniors and seniors whose primary major is Software Engineering or Computer Science. Students from other majors need written instructor permission before registration. The course is offered in Fall and Spring only and is not available in Summer.

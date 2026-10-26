@@ -1,0 +1,15 @@
+DOCUMENT: Beach flag and tower rules
+DOMAIN: Bonita Beach personal hazard sheet
+FLAG_MEANINGS: green = low; yellow = medium; red = high; double red = closed
+TOWER_OPENS: 08:00
+UNGARDED_RULE: water time before 08:00 is outside tower hours
+SOLO_RULE: no solo overhead takeoffs on a yellow flag before the tower opens
+
+## Overview
+This sheet records how Nolan reads the Bonita Beach flag and tower clock before a dawn patrol. It is a personal knowledge file for go and no-go calls, not an official Lee County bulletin. The flag on the tower sign and the empty tower before 08:00 together decide whether a short session is allowed.
+
+## Flag meanings
+Green means low hazard and a normal paddle if the personal clock still clears class. Yellow means medium hazard: stay on the funboard, enter away from the pier rip, and keep takeoffs soft. Red means high hazard and usually a no-go before class because the exit buffer disappears. Double red means the water is closed. A double red ends the session before the car leaves the apartment.
+
+## Tower and solo rules
+Lifeguards staff the tower at 08:00. Any entry before that is unguarded. On a yellow flag with no buddy, overhead takeoffs are off the plan until the tower is staffed. Lightning or thunder in the lot cancels the session rather than delaying it, because a 30-minute wait after thunder misses the drive back for a 09:30 class.

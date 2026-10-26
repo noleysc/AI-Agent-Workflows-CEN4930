@@ -1,0 +1,18 @@
+COURSE_NUMBER: COP 3530
+TITLE: Data Structures and Algorithms
+CREDITS: 3
+PREREQUISITES: COP 2006 and MAC 2311 with a grade of C or better in each
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Computer Science or Software Engineering majors, or instructor approval.
+
+## Description
+COP 3530 Data Structures and Algorithms covers arrays, linked lists, stacks, queues, trees, heaps, hash tables, and graphs, together with asymptotic analysis. Students implement searching and sorting algorithms, analyze time and space tradeoffs, and write automated tests for their data structure libraries. Programming assignments are in a high-level language chosen by the instructor. The course prepares students for advanced software and systems electives that assume comfort with algorithmic complexity.
+
+## Prerequisites
+Required: COP 2006 Programming I and MAC 2311 Calculus I, each with a C or better. MAC 1147 Precalculus does not substitute for MAC 2311 in this prerequisite list. Concurrent enrollment in MAC 2311 is not allowed as a substitute for completion.
+
+## Credits
+COP 3530 awards 3 credit hours of required Computer Science and Software Engineering credit. It is a prerequisite for CEN 4930 AI Agent Studio and for several 4000-level computing electives.
+
+## Enrollment Restrictions
+Majors in Computer Science and Software Engineering may enroll without special permission. Others need written instructor approval. The course runs Fall, Spring, and selected Summers.

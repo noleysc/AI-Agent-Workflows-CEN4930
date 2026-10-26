@@ -1,0 +1,18 @@
+DOCUMENT: Parking and class clock
+DOMAIN: Bonita Beach to Holmes Hall timing
+PARKING_OPENS: 06:00
+EARLIEST_ENTRY: 06:25
+PLANNED_EXIT: 07:35
+PARK_BACK_BY: 09:10
+CLASS_TIME: 09:30
+DRIVE_MINUTES: 35
+MINIMUM_WATER_MINUTES: 45
+
+## Overview
+This document is the timing sheet Nolan uses to decide whether a dawn patrol at Bonita Beach access 10 still leaves enough time for a 09:30 class in Holmes Hall. The hard campus constraint is being parked back by 09:10. The drive is about 35 minutes when the beach road is empty. Working backward, the latest clean water exit is 07:35.
+
+## Timing rules
+Parking at the access lot opens at 06:00. The earliest realistic water entry after walking past the tower is 06:25. From 06:25 to 07:35 is about 70 minutes, which clears the personal 45-minute water-time minimum. Waiting for the 08:00 tower opening before leaving the water fails that math: an 08:00 exit plus a 35-minute drive misses the 09:10 parking cutoff and leaves less than 45 minutes of water time if entry was delayed.
+
+## Failure modes
+A session that is only photos on the beach does not count as water time. Street parking near Holmes Hall is not part of this plan; the return lot is the campus decal lot. If the meter line or a closed lot pushes the exit past 07:35, the call is no-go for that morning rather than cutting class.
