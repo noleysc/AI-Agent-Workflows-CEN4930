@@ -1,0 +1,14 @@
+DOCUMENT: Pier rip and entry zone
+DOMAIN: Bonita Beach access 10
+RIP_LOCATION: standing rip on the south side of the pier
+ENTRY_RULE: enter at least 200 yards south of that rip
+ACCESS: access 10 south of the pier
+
+## Overview
+Thursday's session showed a standing rip just south of the Bonita Beach pier. This file records the entry rule that followed. Nolan paddles from access 10, not from the pier shadow, and keeps at least 200 yards between the takeoff zone and the rip. The rule exists so a short pre-class paddle does not turn into a rescue swim before the tower opens.
+
+## Entry procedure
+Park after 06:00, walk past the tower area, and look south of the pier for the darker outgoing water. If the rip is still sitting on the south shoulder, do not paddle up the beach toward the structure to find a prettier peak. Enter closer to access 10. On the funboard, prioritize a soft knee-high peak inside that zone over a hollower wave next to the rip.
+
+## Exit procedure
+Leave the water by 07:35 on class mornings. If the rip has migrated into the planned peak during the session, paddle south and in rather than crossing the outgoing water diagonally toward the pier. A yellow flag plus an unguarded tower plus this rip is a caution call, not an all-clear.

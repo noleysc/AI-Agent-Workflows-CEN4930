@@ -1,0 +1,18 @@
+COURSE_NUMBER: COP 1500
+TITLE: Introduction to Computer Science
+CREDITS: 3
+PREREQUISITES: None
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Open to all undergraduates. Recommended for students exploring computing majors before COP 2006.
+
+## Description
+COP 1500 Introduction to Computer Science is a first course in computational thinking and programming. Students write small programs that use variables, control flow, functions, and basic data collections while learning how software systems are structured. The course also surveys careers in computing, ethical issues, and the difference between computer science and software engineering pathways. Laboratory sessions emphasize debugging and reading existing code rather than only writing new programs from scratch.
+
+## Prerequisites
+None. Students with no prior programming experience are welcome. Students who already completed COP 2006 should not take COP 1500 for major credit without advisor approval.
+
+## Credits
+COP 1500 awards 3 credit hours. For Software Engineering and Computer Science majors it typically counts as a lower-division elective or as the recommended gateway before COP 2006, depending on catalog year. It does not replace COP 2006 in the CEN 3031 or COP 3530 prerequisite chains.
+
+## Enrollment Restrictions
+No major restriction. High-demand Fall sections may favor first-year students. The course is offered Fall, Spring, and Summer.

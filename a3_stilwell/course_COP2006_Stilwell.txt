@@ -1,0 +1,18 @@
+COURSE_NUMBER: COP 2006
+TITLE: Programming I
+CREDITS: 3
+PREREQUISITES: COP 1500 with a grade of C or better, or equivalent programming experience approved by the department
+COREQUISITES: None
+ENROLLMENT_RESTRICTIONS: Required for Computer Science and Software Engineering majors. Open to other majors with advisor consent.
+
+## Description
+COP 2006 Programming I develops structured programming skills beyond the introductory survey. Students implement modular programs with file I/O, exception handling, and unit tests, and they practice algorithmic problem decomposition. The course language is determined by the department each year. Assignments move from single-file scripts to small multi-module projects that prepare students for data structures and software engineering courses.
+
+## Prerequisites
+Preferred: COP 1500 Introduction to Computer Science with a C or better. Students without COP 1500 may enroll if a faculty advisor documents equivalent prior programming experience. Completion of only a non-credit coding workshop does not satisfy the preferred prerequisite without advisor documentation.
+
+## Credits
+COP 2006 awards 3 credit hours. It is a required prerequisite for CEN 3031 Software Engineering Fundamentals and for COP 3530 Data Structures and Algorithms.
+
+## Enrollment Restrictions
+Majors have registration priority. The course is offered every Fall and Spring; Summer offerings depend on enrollment.
