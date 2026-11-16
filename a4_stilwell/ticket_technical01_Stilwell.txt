@@ -1,0 +1,11 @@
+TICKET_ID: technical01
+CATEGORY: technical
+TICKET_TYPE: standard
+CUSTOMER: Sam L.
+PRODUCT: TideDesk iOS
+
+## Request
+The TideDesk iOS app crashes every time I open the dawn-patrol checklist after updating to version 2.4.1. I already force-quit and reinstalled once. What should I try next so I can sync my Bonita Beach session notes?
+
+## Expected Focus
+Give stepwise troubleshooting for an iOS crash after update, including cache/reinstall and support log collection.
