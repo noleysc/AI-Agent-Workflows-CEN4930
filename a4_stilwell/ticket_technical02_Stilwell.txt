@@ -1,0 +1,11 @@
+TICKET_ID: technical02
+CATEGORY: technical
+TICKET_TYPE: standard
+CUSTOMER: Riley K.
+PRODUCT: TideDesk Web
+
+## Request
+I cannot sign in on the web app. After I enter my email I get "session expired" even though my password reset email arrived. I need access before my 9:30 class to check the parking clock reminder.
+
+## Expected Focus
+Troubleshoot web login / session-expired errors with browser cache, reset link expiry, and account lock checks.

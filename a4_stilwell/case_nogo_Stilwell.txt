@@ -1,0 +1,6 @@
+CASE_ID: nogo01
+EXPECTED: NO-GO
+CASE_TYPE: standard
+
+## Request
+Can I stay in until lifeguards arrive at 08:00 and still make my 09:30 Holmes Hall class?

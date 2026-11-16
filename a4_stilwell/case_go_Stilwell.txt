@@ -1,0 +1,6 @@
+CASE_ID: go01
+EXPECTED: GO
+CASE_TYPE: standard
+
+## Request
+Yellow flag, no lightning, funboard ready, planned exit 07:35, class at 09:30. Should I paddle the early window?

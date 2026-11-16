@@ -1,0 +1,11 @@
+TICKET_ID: feature02
+CATEGORY: feature
+TICKET_TYPE: standard
+CUSTOMER: Chris D.
+PRODUCT: TideDesk Free
+
+## Request
+I want to know if TideDesk Free can send a push reminder when I must exit the water by 07:35 to make class. If that reminder is Pro-only, tell me clearly so I do not upgrade for nothing.
+
+## Expected Focus
+Clarify Free vs Pro reminder features and avoid upselling with fake capabilities.

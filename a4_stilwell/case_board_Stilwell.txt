@@ -1,0 +1,6 @@
+CASE_ID: board01
+EXPECTED: FUNBOARD
+CASE_TYPE: standard
+
+## Request
+Shoulder is sore and the swell is knee-high. Which board should I take on a yellow-flag dawn patrol?

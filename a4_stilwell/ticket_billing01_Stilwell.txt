@@ -1,0 +1,11 @@
+TICKET_ID: billing01
+CATEGORY: billing
+TICKET_TYPE: standard
+CUSTOMER: Maya R.
+PRODUCT: TideDesk Pro
+
+## Request
+I was charged twice for my TideDesk Pro renewal on March 3. I only authorized one annual plan at $96. Please refund the duplicate charge and confirm the next renewal date on my account.
+
+## Expected Focus
+Acknowledge the duplicate charge, explain the refund path for a billing duplicate, and avoid inventing a bank transaction ID.
